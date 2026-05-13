@@ -39,6 +39,13 @@ project/glad/glad.c
 
 The code uses CUDA/OpenGL interoperability, so the CUDA device and OpenGL rendering device should refer to the same NVIDIA GPU.
 
+If some dependancies are not installed, run:
+```bash
+sudo apt update
+sudo apt install build-essential libglfw3-dev libgl1-mesa-dev
+```
+This will install build tools, OpenGL and GLFW
+
 ## Main CUDA Kernel / Experiment Location
 
 The main CUDA simulation code is located in nbody_sim.cu.
